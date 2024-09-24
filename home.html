@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body> 
+    <nav class="sticky w-full bg-orange-100 p-10 rounded-lg top-0 backdrop-blur-sm">
+        <div class="flex justify-between items-center ">
+            <div><button id="home-btn"onclick=switchBlogPage()  class="btn px-8 py-2 text-black text-xl bg-lime-400">Home</button></div>
+            <div class=" flex items-center gap-2">
+                <img src="./assets/logo.png" alt=""><p class="font-bold text-3xl">Donate Bangladesh</p>
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/coin.png" alt="">
+            <div class="flex">
+                <p id="total-amount" class="font-bold text-xl"> 100000</p> 
+                <span class="font-bold text-xl"> BDT</span>
+            </div></div>
+        </div>
+
+    </nav>
+    <main class="container mx-auto">
+        <h1 class="text-3xl my-12 font-extrabold text-slate-900">Important FAQ</h1>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300  border">
+            <div class="collapse-title text-xl font-medium">What is DOM?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300  border">
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <ul>
+                <li>To select an element from the DOM, I can use </li>
+                <li>document.getElementsByClassName()</li>
+                <li>document.getElementsByTagName()</li>
+                <li>document.querySelector()</li>
+                <li>document.querySelector()</li>
+                <li>document.querySelectorAll()</li>
+              </ul> 
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300  border">
+            <div class="collapse-title text-xl font-medium">what is event delegation in the context of the dom,and why is useful?</div>
+            <div class="collapse-content">
+              <p>Event Delegation is a technique in JavaScript that allows you to manage events more efficiently by using a single event listener at a higher level in the DOM tree instead of adding event listeners to individual elements. This is particularly useful when dealing with dynamically added elements or when you have a large number of similar elements.</p>
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300  border">
+            <div class="collapse-title text-xl font-medium">How do uou manupulate an element's attrbutes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>To manipulate an element's attributes and styles using the DOM in JavaScript, I can use various methods and properties provided by the DOM API.I can easily manipulate an element's attributes and styles, making your web applications dynamic and responsive to user interactions.</p>
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300  border">
+            <div class="collapse-title text-xl font-medium">What is DOM?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+          </div>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/comon-function.js"></script>
+    
+</body>
+</html>              
