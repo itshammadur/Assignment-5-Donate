@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment05</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/56e3a77e4a.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--lexend font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    .lexend {
+      font-family: "Lexend", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="relative mb-36">
+    <div class="fixed top-0 z-50 w-full ">
+
+      <div class="navbar bg-[#F9F7F3] lg:px-40 pt-5 pb-9 ">
+        <div class="navbar-start">
+          <!-- <a href="index.html" class="btn btn-ghost text-xl lg:text-3xl px-9  bg-[#B4F461]">Home</a> -->
+          <a id="homeBtn" class="btn btn-ghost text-xl lg:text-3xl px-9  bg-[#B4F461]">Home</a>
+        </div>
+        <div class="navbar-center  lg:flex items-center gap-x-4">
+          <img class="block w-8/12 lg:w-auto" src="assets/logo.png" alt="">
+          <h5 class="font-semibold text-3xl hidden lg:block">Donate Bangladesh</h5>
+
+      </div>
+        <div class="navbar-end">
+          <p class="font-semibold text-gray-400 text-xl lg:text-3xl"><span class="text-yellow-500 ">৳</span>
+            <span class="text-3xl lg:text-4xl" id="balance">10000</span> BDT
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="w-11/12 mx-auto">
+    <h1 class="text-2xl lg:text-4xl font-bold">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+
+    <div class="mt-12 collapse bg-base-200">
+      <input type="checkbox" />
+      <div class="collapse-title text-2xl font-semibold py-6 pl-9">What is the DOM?</div>
+      <div class="collapse-content text-gray-500">
+        <p class="pl-4">DOM stands for Document Object Model, which allows JavaScript to interact with and modify a
+          webpage's content and structure.</p>
+      </div>
+    </div>
+    <div class="mt-2 collapse bg-base-200">
+      <input type="checkbox" />
+      <div class="collapse-title text-2xl font-semibold py-6 pl-9">How do you find an element by its ID?</div>
+      <div class="collapse-content ">
+        <p class="pl-4 text-gray-500">You can use document.getElementById('id') to select an element by its ID.</p>
+      </div>
+    </div>
+    <div class="mt-2 collapse bg-base-200">
+      <input type="checkbox" />
+      <div class="collapse-title text-2xl font-semibold py-6 pl-9">How can you change the text of an element?</div>
+      <div class="collapse-content ">
+        <p class="pl-4 text-gray-500">You can use element.textContent = "New Text"; to change the text inside an
+          element.</p>
+      </div>
+    </div>
+    <div class="mt-2 collapse bg-base-200">
+      <input type="checkbox" />
+      <div class="collapse-title text-2xl font-semibold py-6 pl-9">How do you add a CSS class to an element?</div>
+      <div class="collapse-content ">
+        <p class="pl-4 text-gray-500"> Use element.classList.add('newClass') to add a class to an element.</p>
+      </div>
+    </div>
+    <div class="mt-2 collapse bg-base-200">
+      <input type="checkbox" />
+      <div class="collapse-title text-2xl font-semibold py-6 pl-9">How can you listen for a button click?</div>
+      <div class="collapse-content ">
+        <p class="pl-4 text-gray-500">You can use element.addEventListener('click', function() { }) to run code when a
+          button is clicked.</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    const homeBtn = document.getElementById('homeBtn')
+    homeBtn.addEventListener('click', function (event) {
+      window.location.href = './index.html'
+    })
+  </script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
